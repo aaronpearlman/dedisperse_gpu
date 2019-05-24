@@ -21,9 +21,9 @@ def gpu_dmt(sf, psr_data, mindm, maxdm, dmstep, device=0):
     cuda.select_device(device)
     chan_freqs = cuda.to_device(np.array(sf.chan_freqs, dtype=np.float32))
     
-    dm_list = np.arange(options.mindm, options.maxdm + options.dmstep, options.dmstep)
+    dm_list = np.arange(mindm, maxdm + dmstep, dmstep)
     
-    if (dm_list[-1] > options.maxdm):
+    if (dm_list[-1] > maxdm):
         dm_list = np.delete(dm_list, -1)
     
     dm_list = cuda.to_device(dm_list.astype(np.float32))
@@ -77,6 +77,7 @@ sf = SigprocFile(fp="psr_p1s_dm10000.fil")
 maxChunkSize = 1E12
 
 psr_data = sf.get_data(0, maxChunkSize)
+#print(sf.nsamples)
 sf.nsamples = np.shape(psr_data)[0]
 
 
