@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pysigproc
+Version: 0.39
+Summary: Python reader/writer for sigproc filterbank files (works with python3 as well)
+Home-page: http://github.com/devanshkv/pysigproc
+Author: Paul Demorest, Devansh Agarwal, Kshitij Aggarwal
+Author-email: pdemores@nrao.edu, da0017@mix.wvu.edu, ka0064@mix.wvu.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Scientific/Engineering :: Astronomy
