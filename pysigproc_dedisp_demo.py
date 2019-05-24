@@ -58,11 +58,11 @@ parser = OptionParser("")
 parser.add_option("--filterbank", type="string", dest="filterbank", default="",
                   help="Filterbank file name.")
 parser.add_option("--mindm", type="float", dest="mindm", default=0.0,
-                  help="Filterbank file name.")
+                  help="Minimum DM to dedisperse.")
 parser.add_option("--maxdm", type="float", dest="maxdm", default=0.0,
-                  help="Filterbank file name.")
+                  help="Maximum DM to dedisperse.")
 parser.add_option("--dmstep", type="float", dest="dmstep", default=0.0,
-                  help="Filterbank file name.")
+                  help="DM step size.")
 (options, args) = parser.parse_args()
 
 
